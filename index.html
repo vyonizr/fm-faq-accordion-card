@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        color: white;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body class="flex h-fit min-h-screen flex-col items-center font-kumbh">
+    <main class="relative mt-[148px] w-[327px] rounded-3xl bg-white">
+      <img
+        class="absolute -top-[108px] left-[45px] right-[45px] z-20 m-0"
+        src="images/illustration-woman-online-mobile.svg"
+        alt="woman online illustration"
+      />
+      <img
+        class="absolute left-[45px] right-[45px] z-10 m-0"
+        src="images/bg-pattern-mobile.svg"
+        alt="woman online illustration shadow"
+      />
+      <section class="px-6 pb-12 pt-[132px]">
+        <h1 class="text-center text-[2rem] font-bold">FAQ</h1>
+        <details class="question-accordion">
+          <summary class="grid grid-cols-[1fr_8px] items-center">
+            <p>How many team members can I invite?</p>
+            <img
+              class="accordion-arrow"
+              src="./images/icon-arrow-down.svg"
+              alt="arrow down"
+            />
+          </summary>
+          <p class="mt-3">
+            You can invite up to 2 additional users on the Free plan. There is
+            no limit on team members for the Premium plan.
+          </p>
+        </details>
+        <details class="question-accordion">
+          <summary class="grid grid-cols-[1fr_8px] items-center">
+            <p>What is the maximum file upload size?</p>
+            <img
+              class="accordion-arrow"
+              src="./images/icon-arrow-down.svg"
+              alt="arrow down"
+            />
+          </summary>
+          <p class="mt-3">
+            No more than 2GB. All files in your account must fit your allotted
+            storage space.
+          </p>
+        </details>
+        <details class="question-accordion">
+          <summary class="grid grid-cols-[1fr_8px] items-center">
+            <p>How do I reset my password?</p>
+            <img
+              class="accordion-arrow"
+              src="./images/icon-arrow-down.svg"
+              alt="arrow down"
+            />
+          </summary>
+          <p class="mt-3">
+            Click “Forgot password” from the login page or “Change password”
+            from your profile page. A reset link will be emailed to you.
+          </p>
+        </details>
+        <details class="question-accordion">
+          <summary class="grid grid-cols-[1fr_8px] items-center">
+            <p>Can I cancel my subscription?</p>
+            <img
+              class="accordion-arrow"
+              src="./images/icon-arrow-down.svg"
+              alt="arrow down"
+            />
+          </summary>
+          <p class="mt-3">
+            Yes! Send us a message and we'll process your request no questions
+            asked.
+          </p>
+        </details>
+        <details class="question-accordion">
+          <summary class="grid grid-cols-[1fr_8px] items-center">
+            <p>Do you provide additional support?</p>
+            <img
+              class="accordion-arrow"
+              src="./images/icon-arrow-down.svg"
+              alt="arrow down"
+            />
+          </summary>
+          <p class="mt-3">
+            Chat and email support is available 24/7. Phone lines are open
+            during normal business hours.
+          </p>
+        </details>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/vyonizr" target="_blank"
+        >vyonizr</a
+      >.
+    </footer>
+  </body>
+</html>

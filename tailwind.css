@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)) no-repeat;
+}
+
+.question-accordion {
+  @apply cursor-pointer list-none border-b-2 border-[#E8E8EA] py-5;
+}
+
+.question-accordion .accordion-arrow {
+  @apply scale-100 transition duration-300 ease-out;
+}
+
+.question-accordion[open] summary {
+  @apply font-bold text-[#1E1F36];
+}
+
+.question-accordion[open] .accordion-arrow {
+  @apply -scale-100;
+}
+
+summary {
+  @apply list-none text-[0.813rem] text-[#4B4C5F];
+}
+
+details > p {
+  @apply text-xs text-[#787887];
+}
