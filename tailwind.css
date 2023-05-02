@@ -7,7 +7,7 @@ body {
 }
 
 .question-accordion {
-  @apply cursor-pointer list-none border-b-2 border-[#E8E8EA] py-5;
+  @apply list-none border-b-2 border-[#E8E8EA];
 }
 
 .question-accordion .accordion-arrow {
@@ -15,7 +15,7 @@ body {
 }
 
 .question-accordion[open] summary {
-  @apply font-bold text-[#1E1F36];
+  @apply font-bold text-[#1E1F36] pb-3;
 }
 
 .question-accordion[open] .accordion-arrow {
@@ -27,5 +27,5 @@ summary {
 }
 
 details > p {
-  @apply text-xs text-[#787887];
+  @apply text-xs text-[#787887] mb-4;
 }

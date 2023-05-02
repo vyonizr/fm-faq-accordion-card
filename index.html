@@ -45,7 +45,9 @@
       <section class="px-6 pb-12 pt-[132px]">
         <h1 class="text-center text-[2rem] font-bold">FAQ</h1>
         <details class="question-accordion">
-          <summary class="grid grid-cols-[1fr_8px] items-center">
+          <summary
+            class="grid cursor-pointer grid-cols-[1fr_8px] items-center py-5 hover:lg:text-[#F47B56]"
+          >
             <p>How many team members can I invite?</p>
             <img
               class="accordion-arrow"
@@ -53,13 +55,15 @@
               alt="arrow down"
             />
           </summary>
-          <p class="mt-3">
+          <p>
             You can invite up to 2 additional users on the Free plan. There is
             no limit on team members for the Premium plan.
           </p>
         </details>
         <details class="question-accordion">
-          <summary class="grid grid-cols-[1fr_8px] items-center">
+          <summary
+            class="grid cursor-pointer grid-cols-[1fr_8px] items-center py-5 hover:lg:text-[#F47B56]"
+          >
             <p>What is the maximum file upload size?</p>
             <img
               class="accordion-arrow"
@@ -67,13 +71,15 @@
               alt="arrow down"
             />
           </summary>
-          <p class="mt-3">
+          <p>
             No more than 2GB. All files in your account must fit your allotted
             storage space.
           </p>
         </details>
         <details class="question-accordion">
-          <summary class="grid grid-cols-[1fr_8px] items-center">
+          <summary
+            class="grid cursor-pointer grid-cols-[1fr_8px] items-center py-5 hover:lg:text-[#F47B56]"
+          >
             <p>How do I reset my password?</p>
             <img
               class="accordion-arrow"
@@ -81,13 +87,15 @@
               alt="arrow down"
             />
           </summary>
-          <p class="mt-3">
+          <p>
             Click “Forgot password” from the login page or “Change password”
             from your profile page. A reset link will be emailed to you.
           </p>
         </details>
         <details class="question-accordion">
-          <summary class="grid grid-cols-[1fr_8px] items-center">
+          <summary
+            class="grid cursor-pointer grid-cols-[1fr_8px] items-center py-5 hover:lg:text-[#F47B56]"
+          >
             <p>Can I cancel my subscription?</p>
             <img
               class="accordion-arrow"
@@ -95,13 +103,15 @@
               alt="arrow down"
             />
           </summary>
-          <p class="mt-3">
+          <p>
             Yes! Send us a message and we'll process your request no questions
             asked.
           </p>
         </details>
         <details class="question-accordion">
-          <summary class="grid grid-cols-[1fr_8px] items-center">
+          <summary
+            class="grid cursor-pointer grid-cols-[1fr_8px] items-center py-5 hover:lg:text-[#F47B56]"
+          >
             <p>Do you provide additional support?</p>
             <img
               class="accordion-arrow"
@@ -109,7 +119,7 @@
               alt="arrow down"
             />
           </summary>
-          <p class="mt-3">
+          <p>
             Chat and email support is available 24/7. Phone lines are open
             during normal business hours.
           </p>
@@ -126,5 +136,19 @@
         >vyonizr</a
       >.
     </footer>
+
+    <script>
+      const details = document.querySelectorAll("details");
+
+      details.forEach((targetDetail) => {
+        targetDetail.addEventListener("click", () => {
+          details.forEach((detail) => {
+            if (detail !== targetDetail) {
+              detail.removeAttribute("open");
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
