@@ -27,7 +27,7 @@ summary {
 }
 
 details > p {
-  @apply text-xs text-[#787887] mb-4;
+  @apply text-xs text-[#787887] mb-4 lg:w-[320px];
 }
 
 .at-box {
