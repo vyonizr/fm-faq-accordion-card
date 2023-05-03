@@ -17,8 +17,6 @@
     />
     <link rel="stylesheet" href="./style.css" />
     <title>Frontend Mentor | FAQ Accordion Card</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         color: white;
@@ -32,7 +30,7 @@
   </head>
   <body class="flex h-fit min-h-screen flex-col items-center font-kumbh">
     <main
-      class="relative mt-[148px] flex w-[327px] flex-col rounded-3xl bg-white lg:min-h-[509px] lg:w-[920px] lg:flex-row lg:justify-end lg:mt-[129px]"
+      class="relative mt-[148px] flex w-[327px] flex-col rounded-3xl bg-white lg:mt-[129px] lg:min-h-[509px] lg:w-[920px] lg:flex-row lg:justify-end"
     >
       <section class="relative lg:basis-[475px] lg:overflow-y-hidden">
         <img
@@ -57,11 +55,13 @@
         />
       </section>
       <img
-        class="absolute -left-[93px] top-[206px] z-30 m-0 hidden lg:block"
+        class="at-box absolute -left-[93px] top-[206px] z-30 m-0 hidden lg:block"
         src="images/illustration-box-desktop.svg"
         alt="box illustration"
       />
-      <section class="px-6 pb-12 pt-[132px] lg:w-[350px] lg:pt-[65px] lg:pr-24 lg:flex-grow">
+      <section
+        class="px-6 pb-12 pt-[132px] lg:w-[350px] lg:flex-grow lg:pr-24 lg:pt-[65px]"
+      >
         <h1 class="text-center text-[2rem] font-bold lg:text-left">FAQ</h1>
         <details class="question-accordion">
           <summary

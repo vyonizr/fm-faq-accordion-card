@@ -29,3 +29,21 @@ summary {
 details > p {
   @apply text-xs text-[#787887] mb-4;
 }
+
+.at-box {
+	animation: 3s ease-in-out 0s infinite floating;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+  
+  100% {
+    transform: translateY(0px);
+  }
+}
