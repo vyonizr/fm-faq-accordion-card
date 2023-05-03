@@ -31,19 +31,38 @@
     </style>
   </head>
   <body class="flex h-fit min-h-screen flex-col items-center font-kumbh">
-    <main class="relative mt-[148px] w-[327px] rounded-3xl bg-white">
+    <main
+      class="relative mt-[148px] flex w-[327px] flex-col rounded-3xl bg-white lg:min-h-[509px] lg:w-[920px] lg:flex-row lg:justify-end lg:mt-[129px]"
+    >
+      <section class="relative lg:basis-[475px] lg:overflow-y-hidden">
+        <img
+          class="absolute -top-[108px] left-[45px] right-[45px] z-20 m-0 lg:hidden"
+          src="images/illustration-woman-online-mobile.svg"
+          alt="woman online illustration"
+        />
+        <img
+          class="absolute left-[45px] right-[45px] z-10 m-0 lg:hidden"
+          src="images/bg-pattern-mobile.svg"
+          alt="woman online illustration shadow"
+        />
+        <img
+          class="absolute -left-[84px] bottom-[80px] top-[70px] z-20 m-0 hidden lg:block"
+          src="images/illustration-woman-online-desktop.svg"
+          alt="woman online illustration"
+        />
+        <img
+          class="absolute -left-[87px] -top-[0px] z-10 m-0 hidden lg:block"
+          src="images/bg-pattern-desktop.svg"
+          alt="woman online illustration shadow"
+        />
+      </section>
       <img
-        class="absolute -top-[108px] left-[45px] right-[45px] z-20 m-0"
-        src="images/illustration-woman-online-mobile.svg"
-        alt="woman online illustration"
+        class="absolute -left-[93px] top-[206px] z-30 m-0 hidden lg:block"
+        src="images/illustration-box-desktop.svg"
+        alt="box illustration"
       />
-      <img
-        class="absolute left-[45px] right-[45px] z-10 m-0"
-        src="images/bg-pattern-mobile.svg"
-        alt="woman online illustration shadow"
-      />
-      <section class="px-6 pb-12 pt-[132px]">
-        <h1 class="text-center text-[2rem] font-bold">FAQ</h1>
+      <section class="px-6 pb-12 pt-[132px] lg:w-[350px] lg:pt-[65px] lg:pr-24 lg:flex-grow">
+        <h1 class="text-center text-[2rem] font-bold lg:text-left">FAQ</h1>
         <details class="question-accordion">
           <summary
             class="grid cursor-pointer grid-cols-[1fr_8px] items-center py-5 hover:lg:text-[#F47B56]"

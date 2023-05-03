@@ -23,7 +23,7 @@ body {
 }
 
 summary {
-  @apply list-none text-[0.813rem] text-[#4B4C5F];
+  @apply list-none text-[0.813rem] text-[#4B4C5F] lg:text-sm;
 }
 
 details > p {
